@@ -6,7 +6,7 @@
 }
 .header{
     position: relative;
-    background: url(iphone) right no-repeat;
+    background: url("iphone") right no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100%;
