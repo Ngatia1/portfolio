@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../multimedia/content/images/copy.jpg);
+    background-image: url(./copy.jpg);
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: 50% 0%;
