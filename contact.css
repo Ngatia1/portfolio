@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../multimedia/content/images/copy.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-color: #1c1c1c;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact{
+    width: 100%;
+    line-height: 1.5;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #f39c12;
+}
+.contact p{
+    color: #1c1c1c;
+}
+.contact dl dt{
+    font-size: large;
+    color: rgb(0, 0, 255);
+}
+.contact dl dd{
+    padding-left: 20px;
+}
+.contact dl dd a{
+    color: rgb(50, 150, 255);
+    text-decoration: none;
+}
+.contact dl dd a:hover{
+    color: #8a2be2;
+}
+.contact dl dd ul li{
+    list-style: none;
+}
+button{
+    width: 10%;
+    border-radius: 10px;
+    margin-bottom: -35vh;
+}
+button a{
+    background-color: #000;
+    color: #adff2f;
+    text-decoration: none;
+}
+button a:hover{
+    background-color: #7c7f7c;
+    color: #2ff2ff;
+}
+footer{
+    font-weight: 600;
+    font-size: medium;
+    margin-bottom: -40vh;
+}
+footer p a svg{
+    background-color: #2afadf;
+    border-radius: 10px;
+    margin-bottom: -3px;
+}
+footer p a svg:hover{
+    background-color: rgb(200, 85, 153);
+    border-radius: 10px;
+    transform: translateX(-3.5px);
+    font-size: 10px;
+}

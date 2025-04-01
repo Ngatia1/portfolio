@@ -1,0 +1,60 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background: linear-gradient(to right, #2c2, #0af);
+    color: #fff;   
+}
+h1{
+    font: 3.5rem 'Times' sans-serif;
+    color: #dd6633;
+}
+.choices{
+    margin-bottom: 30px;
+}
+.choices button{
+    font-size: 3.5rem;
+    min-width: 100px;
+    margin: 0 100px;
+    border-radius: 200px;
+    background-color: hsl(315, 100%, 50%);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.choices button:hover{
+    background-color: hsl(2000, 100%, 70%);
+    transform: translateY(-19px);
+}
+#playerDisplay, #computerDisplay{
+    font-size: 2.5rem;
+}
+#resultDisplay{
+    font-size: 5rem;
+    margin: 30px 0;
+}
+.scoreDisplay{
+    font-size: 2rem;
+}
+.greenText, #playerScoreDisplay{
+    color: rgb(53, 231, 53);
+}
+.redText, #computerScoreDisplay{
+    color: rgb(231, 53, 53);
+}
+footer{
+    margin-top: 200px;
+}
+footer p a svg{
+    background-color: #2afadf;
+    border-radius: 10px;
+    margin-bottom: -3px;
+}
+footer p a svg:hover{
+    background-color: rgb(200, 85, 153);
+    border-radius: 10px;
+    transform: translateX(-3.5px);
+    font-size: 10px;
+}

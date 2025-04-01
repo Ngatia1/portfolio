@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background:linear-gradient(135deg, #2afadf 10%, #c346c2 100%) no-repeat fixed;
+    color: #fff;
+}
+#main-heading{
+    background-color: rgba(25, 25, 25, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1px;
+}
+h1, h3, h2{
+    font-weight: bold;
+    color: #f39c12;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+#dashboard{
+    width: 200px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #225252, #522252);
+    display: block;
+    padding: 20px;
+    position: relative;
+    float: left;
+    border-radius: 15px;
+    margin: 0px;
+}
+h3{
+    font-size: 1.75em;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+#dashboard .content .list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.content .list label{
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+    background-color: rgba(166, 233, 211, 0.1);
+    border-radius: 12px;
+    margin: 5px 0;
+    z-index: 12;
+    transition: all 0.4s ease;
+}
+.content .list label span:hover{
+    color: aqua;
+}
+#about:checked ~ .list .about span,
+#skills:checked ~ .list .skills span,
+#services:checked ~ .list .services span{
+    color: #ff00ff88;
+}
+.content .indicator{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+#home:checked ~ .list .indicator{
+    top: 0;
+}
+#skills:checked ~ .list .indicator{
+    top: 80px;
+}
+#services:checked ~ .list .indicator{
+    top: 140px;
+}
+#dashboard input[type="radio"]{
+    display: none;
+}
+#main{
+    margin-left: 201px;
+    margin-top: 1px;
+    margin-right: 5px;
+    padding: 20px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #522252, #225252);
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.75em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about, .skills, .services{
+    padding: 10px;
+    background-color: #225252;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+h4{
+    color: #f79f99;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.about h4::before{
+    content: "👤";
+}
+.skills h4::before{
+    content: "🤖";
+}
+.services h4::before{
+    content: "👨🏾‍💻";
+}
+span{
+    color: #ffcc12;
+    font-weight: bold;
+}
+dl{
+    background-color: #4d4d32;
+    color: grey;
+    border-radius: 15px;
+}
+dt{
+    background-color: #522252;
+    border-radius: 8px;
+    padding: 0.01% 1%;
+}
+.skills dl dd p, .services dl dd{
+    color: #fff;
+    padding: 0.1% 1%;
+    font-size: small;
+}
+.read-more{
+    padding-left: 2%;
+    font-size: medium;
+    text-decoration: none;
+    color: blueviolet;
+}
+.read-more::after{
+    content: "→";
+    color: blueviolet;
+    padding-left: 5px;
+}
+.contacts h4::before{
+    content: "✉️";
+}
+button{
+    background-color: black;
+    color: greenyellow;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: cadetblue;
+    color: blue;
+}
+.contacts{
+    font-size: medium;
+}
+footer{
+    text-align: center;
+    background-color: #222;
+}
+.nav-002 ul li a:hover{
+    color: #ffcc12;
+}
+footer p a svg{
+    background-color: #2afadf;
+    border-radius: 10px;
+    margin-bottom: -3px;
+}
+footer p a svg:hover{
+    background-color: rgb(200, 85, 153);
+    border-radius: 10px;
+    transform: translateX(-3.5px);
+}

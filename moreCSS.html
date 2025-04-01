@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./more.css">
+    <title>More on CSS-3</title>
+</head>
+<body>
+    <section id="header">
+        <div class="header">
+            <h1>CSS-3</h1>
+            <nav class="nav">
+                <h2>Navigation</h2>
+                <ul>
+                    <li>
+                        <a href="">Definition</a>
+                    </li>
+                    <li>
+                        <a href="">Syntax</a>
+                    </li>
+                    <li>
+                        <a href="">Properties</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section id="searchbar">
+        <div class="search">
+            <form id="searchform" action="/results">
+                <input type="text" name="search" id="search" placeholder="Search" autocomplete="off" aria-label="Search">
+            </form>
+        </div>
+    </section>
+    <section id="mainPage">
+        <h2>Main</h2>
+        <div class="content">
+            <h3>Definition</h3>
+            <p>To mean <span>Cascading Style Sheets</span> is a language used to decribe how a HTML written webpage will look.<br>It is the styling language of a website.</p>
+        </div>
+        <div class="content">
+            <h3>Properties</h3>
+            <div class="description">               
+                <ul>
+                    <li>
+                        <h4>@keyframes</h4>
+                        <p>
+                            This CSS-3 "at" rule is used to define the properties that will be animated is an animation rule.
+                            <br><b>Syntax</b>
+                            <br>@keyframes: keyframe=name
+                            <br>{percentage} | from | to {cssrules}}*
+                            <br>Where each block starts with trhe percentage into the animation at which the rules apply, from is a keyword for 0%, and is a keyword for 100%.
+                            <br><b>Example</b>
+                            <br><img src="../multimedia/assests for css/Screenshot 2024-11-11 013310.png" alt="This is a screenshoot image example of @keyframes" title="This is a screenshoot image example of @keyframes">
+                            <br>NB//WebKit supports this property as @-webkit-keyframes.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>accelerator</h4>
+                        <p>
+                            This property specifies whether an element is an indicator or not.
+                            <br><b>Syntax</b>
+                            <br>accelerator: true | false
+                            <br>When the standard underline style is applied and accelerator is set to true, the style should be toggled when the <small>ALT</small> key is depressed, revealing the various access keys in play.
+                            <br><b>Example</b>
+                            <br><img src="../multimedia/assests for css/Screenshot 2024-11-11 015141.png" alt="This is a screenshoot image of an accelelator" title="This is a screenshoot image of an accelelator">
+                            <br>NB//Under Internet Explorer 8 this property should be represented as -ms-accelerator.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>animation</h4>
+                        <p>
+                            This shorthand property is used to set all the animation properties at once.
+                            <br><b>Syntax</b>
+                            <br>animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction
+                            <br>Where each value is defined by its named property. Like other shorthand properties, values may be omitted. There may be other shorthand animation rules that follow the first, separated by commas.
+                            <br><b>Example</b>
+                            <br><img src="../multimedia/assests for css/Screenshot 2024-11-11 015244.png" alt="This is a screenshoot image example of the animation property shorthand" title="This is a screenshoot image example of the animation property in shorthand">
+                            <br>NB//WebKit supports this property as -webkit-animation.
+                        </p>
+                        <ul>
+                            <li>
+                                <h5>animation-delay</h5>
+                                <p>
+                                    This property is used to definea delay before an animation starts.
+                                    <br><b>Syntax</b>
+                                    <br>animation-delay: time1 [,..timeN]
+                                    <br>Where time is a standard CSS-3 time value like <i>2s</i> or <i>4700ms</i>. The default value is 0, meaning the animation starts immediately.
+                                    <br><b>Example</b>
+                                    <br><img src="../multimedia/assests for css/Screenshot 2024-11-11 015419.png" alt="This is a screenshoot image example of the animation-delay property" title="This is a screenshoot image example of the animation-delay property">
+                                    <br>NB//WebKit supports tthis property as -webkit-animation-delay.
+                                    <br>..//Be careful staggering animations, as properties will revert to their nonanimation values once the animation completes.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>animation-direction</h5>
+                                <p>
+                                    This  property is used to indicate if an animation plays in reverse or repeats itself every iteration.
+                                    <br><b>Syntax</b>
+                                    <br>animation-direction: normal | alternate [,normal | alternate]*
+                                    <br>The default is normal.
+                                    <br><b>Example</b>
+                                    <br><img src="../multimedia/assests for css/Screenshot 2024-11-11 015530.png" alt="This is a screenshoot image example of the animation-direction property" title="This is a screenshoot image example of the animation-direction property">
+                                    <br>NB//WebKit supports thsi property as -webkit-animation-direction.
+                                    <br>..//If the animation-direction is alternate, the timing function will also alternate if appropriate.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>animation-duration</h5>
+                                <p>
+                                    This property is used to define the time it takes one iteration of an animation to play.
+                                    <br><b>Syntax</b>
+                                    <br>animation-duration: time [,time]*
+                                    <br>Where time is a validd time value like <i>5s</i> or <i>3500ms</i>. The initial value of time is0, meaning no animation plays.
+                                    <br><b>Example</b>
+                                    <br><img src="../multimedia/assests for css/Screenshot 2024-11-11 015711.png" alt="This is a screenshoot image example of the animation-duration property" title="This is a screenshoot image example of the animation-duration property">
+                                    <br>NB//Webkit supports this property as -webkit-animation-duration.
+                                    <br>..//Be careful with staggering durations, as the shorter the animation will revert to its nonanimation values once the animation completes.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>animation-iteration-count</h5>
+                                <p>
+                                    This property is used to define the number of times an animation should play.
+                                    <br><b>Syntax</b>
+                                    <br>animation-iteration-count: number | infinite [,number | infinite]*
+                                    <br>Where number is a positive integer and the keyword <i>infinite</i> indicates continuous animation.
+                                    <br><b>Example</b>
+                                    <br><img src="../multimedia/assests for css/Screenshot 2024-11-11 015853.png" alt="This is a screenshoot image example of the animation-iteration-count property" title="This is a screenshoot image example of the animation-iteration-count property">
+                                    <br>NB//WebKit supports this property as -webkit-animation-iteration-count.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>animation-name</h5>
+                                <p>
+                                    This property is ised to define the animation that should be run. The @keyframe directive specifeid difines the properties to animate.The keyword none can be used to override a cascade.
+                                    <br><b>Syntax</b>
+                                    <br>animation-name: @keyframe-name | none [,@keyframe-name | none]*
+                                    <br>Where @keyframe-name is the name of the animation defined by an @keyframe directive.
+                                    <br><b>Example</b>
+                                    <br><img src="../multimedia/assests for css/Screenshot 2024-11-11 020056.png" alt="This is a screenshoot image example of the animation-name property" title="This is a screenshoot image example of the animation-name property">
+                                    <br>NB//WebKit supports this propety as -webkit-animation-name.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>animation-timing-function</h5>
+                                <p>
+                                    This property is used to describe how the animation will play.
+                                    <br><b>Syntax</b>
+                                    <br>animation-timing-function: timingfunction [,timingfunction2, timingfunctionN]
+                                    <br>Where the timingfunction is one of the following values:
+                                    <br>cubic-bexier(number,number,number,number)| ease | ease-in | ease-in-out | ease-out | linear
+                                    <br>The default value is ease.
+                                    <br><b>Example</b>
+                                    <br><img src="../multimedia/assests for css/Screenshot 2024-11-11 020412.png" alt="This is a screenshoot image example of the animation-timing-function property" title="This is a screenshoot image example of the animation-timing-function property">
+                                    <br>NB//WebKit supports this property as -webkit-animation-timing-function.
+                                    <br>..//If applicacable, the timing function will reverse if animation-direction is set to alternate.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>backface-visibility</h4>
+                        <p>
+                            This property is used to indicate whether the backside of an element is visible if the element is roteated to dispaly the back.
+                            <br><b>Syntax</b>
+                            <br>backface-visibility: hidden | visible
+                            <br>The default value is visible. When it is set to hidden, the element is not visible if it is not facing the screen. When it is set to visible, it is always visible, which may mean you see the reverse of an image.
+                            <br><b>Example</b>
+                            <br>
+                            <br>NB//Webkit supports this property as -webkit-backface-visibility. 
+                        </p>
+                    </li>
+                    <li>
+                        <h4>background</h4>
+                        <p>
+                            This porperty sets in a shorthand form any or all background properties.
+                            <br><b>Syntax</b>
+                            <br>background: background-color background-image background-repeat background-attachment background-position;
+                            <br><b>Example</b>
+                            <br><img src="../multimedia/assests for css/Screenshot 2024-11-12 184228.png" alt="">
+                            <br>NB//As with all shorthandforms, document authors should experiment with individual background-related property values efore adopting a short form.
+                            <br>..//Under the emerging CSSe specification, it is possible to specify multiple files for a backgroundand separate each with a comma, for example,
+                            <br><img src="../multimedia/assests for css/Screenshot 2024-11-12 183641.png" alt="">
+                            <br>would put a background image in the top-left area of the body. Support is limited, though Safari 1.3+ browsers support most CSS3 background features.
+                        </p>
+                        <ul>                           
+                            <li>
+                                <h5>background-attachment</h5>
+                                <p>
+                                    This property sets the background image to scroll or not to scroll with its associated element’s content. The default value is scroll, which sets the background to scroll with the associated content, typically text. The alternate value, fixed, is intended to make the background static while associated content such as text scrolls over the background. A value of inherit applies the value of this property from a containing parent element.
+                                    <br><b>Syntax</b>
+                                    <br>background-attachment: scroll | fixed | inherit
+                                    <br><b>Example</b>
+                                    <br><img src="../multimedia/assests for css/Screenshot 2024-11-12 185357.png" alt="">
+                                    <br>NB//This property is often used to create a watermark effect similar to the proprietary attribute of the &lt;body&gt; tag, bgproperties, introduced by Microsoft.                                    
+                                </p>
+                            </li>
+                            <li>
+                                <h5>background-clip</h5>
+                            </li>
+                            <li>
+                                <h5>background-color</h5>
+                                <p>
+                                    This property sets an element’s background color. A wide variety of color values can be used, while the default value, transparent, allows any underlying content to show through.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>background-image</h5>
+                            </li>
+                            <li>
+                                <h5>background-origin</h5>
+                            </li>
+                            <li>
+                                <h5>background-position</h5>
+                                <p>#about background-position</p>
+                                <ul>
+                                    <li>
+                                        <h6>background-position-x</h6>
+                                    </li>
+                                    <li>
+                                        <h6>background-position-y</h6>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>background-repeat</h5>
+                            </li>
+                            <li>
+                                <h5>background-size</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>behaviour</h4>
+                    </li>
+                    <li>
+                        <h4>binding</h4>
+                    </li>
+                    <li>
+                        <h4>border</h4>
+                        <p>#about border</p>
+                        <ul>
+                            <li>
+                                <h5>border-bottom</h5>
+                            </li>
+                            <li>
+                                <h5>border-bottom-color</h5>
+                            </li>
+                            <li>
+                                <h5>border-bottom-left-radius</h5>
+                            </li>
+                            <li>
+                                <h5>border-bottom-right-radius</h5>
+                            </li>
+                            <li>
+                                <h5>border-bottom-style</h5>
+                            </li>
+                            <li>
+                                <h5>border-bottom-width</h5>
+                            </li>
+                            <li>
+                                <h5>border=collapse</h5>
+                            </li>
+                            <li>
+                                <h5>border-color</h5>
+                            </li>
+                            <li>
+                                <h5>border-image</h5>
+                            </li>
+                            <li>
+                                <h5>border-left</h5>
+                            </li>
+                            <li>
+                                <h5>border-left-color</h5>
+                            </li>
+                            <li>
+                                <h5>border-left-style</h5>
+                            </li>
+                            <li>
+                                <h5>border-left-width</h5>
+                            </li>
+                            <li>
+                                <h5>border-radius</h5>
+                            </li>
+                            <li>
+                                <h5>border-right</h5>
+                            </li>
+                            <li>
+                                <h5>border-right-color</h5>
+                            </li>
+                            <li>
+                                <h5>border-right-style</h5>
+                            </li>
+                            <li>
+                                <h5>border-right-width</h5>
+                            </li>
+                            <li>
+                                <h5>border-spacing</h5>
+                            </li>
+                            <li>
+                                <h5>border-top-left-radius</h5>
+                            </li>
+                            <li>
+                                <h5>border-top-right-radius</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>box-reflex</h4>
+                    </li>
+                    <li>
+                        <h4>box-shadow</h4>
+                    </li>
+                    <li>
+                        <h4>box-sizing</h4>
+                    </li>
+                    <li>
+                        <h4>button</h4>
+                    </li>
+                    <li>
+                        <h4>caption-side</h4>
+                    </li>
+                    <li>
+                        <h4>clear</h4>
+                    </li>
+                    <li>
+                        <h4>clip</h4>
+                    </li>
+                    <li>
+                        <h4>color</h4>
+                    </li>
+                    <li>
+                        <h4>column</h4>
+                        <p>#about columns</p>
+                        <ul>
+                            <li>
+                                <h5>column-break-after</h5>
+                            </li>
+                            <li>
+                                <h5>column-break-before</h5>
+                            </li>
+                            <li>
+                                <h5>column-count</h5>
+                            </li>
+                            <li>
+                                <h5>column-gap</h5>
+                            </li>
+                            <li>
+                                <h5>column-rule</h5>
+                            </li>
+                            <li>
+                                <h5>column-rule-color</h5>
+                            </li>
+                            <li>
+                                <h5>column-rule-style</h5>
+                            </li>
+                            <li>
+                                <h5>column-rule-width</h5>
+                            </li>
+                            <li>
+                                <h5>column-width</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>content</h4>
+                    </li>
+                    <li>
+                        <h4>counter-increment</h4>
+                    </li>
+                    <li>
+                        <h4>counter-reset</h4>
+                    </li>
+                    <li>
+                        <h4>cursor</h4>
+                    </li>
+                    <li>
+                        <h4>direction</h4>
+                    </li>
+                    <li>
+                        <h4>display</h4>
+                    </li>
+                    <li>
+                        <h4>empty-calls</h4>
+                    </li>
+                    <li>
+                        <h4>filter</h4>
+                    </li>
+                    <li>
+                        <h4>float</h4>
+                    </li>
+                    <li>
+                        <h4>font</h4>
+                        <p>#about font</p>
+                        <ul>
+                            <li>
+                                <h5>font-family</h5>
+                            </li>
+                            <li>
+                                <h5>font-size</h5>
+                            </li>
+                            <li>
+                                <h5>font-variant</h5>
+                            </li>
+                            <li>
+                                <h5>font-weight</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>float</h4>
+                    </li>
+                    <li>
+                        <h4>gradient</h4>
+                    </li>
+                    <li>
+                        <h4>height</h4>
+                    </li>
+                    <li>
+                        <h4>image-rendering</h4>
+                    </li>
+                    <li>
+                        <h4>ime-mode</h4>
+                    </li>
+                    <li>
+                        <h4>interpolation-mode</h4>
+                    </li>
+                    <li>
+                        <h4>layout-grid</h4>
+                        <p>#about layout-grid</p>
+                        <ul>
+                            <li>
+                                <h5>layout-grid-char</h5>
+                            </li>
+                            <li>
+                                <h5>layout-grid-line</h5>
+                            </li>
+                            <li>
+                                <h5>layout-grid-mode</h5>
+                            </li>
+                            <li>
+                                <h5>layout-grid-type</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>left</h4>
+                    </li>
+                    <li>
+                        <h4>letter-spacing</h4>
+                    </li>
+                    <li>
+                        <h4>line-break</h4>
+                    </li>
+                    <li>
+                        <h4>line-height</h4>
+                    </li>
+                    <li>
+                        <h4>list-style</h4>
+                        <p>#about list-style</p>
+                        <ul>
+                            <li>
+                                <h5>list-style-image</h5>
+                            </li>
+                            <li>
+                                <h5>list-style-position</h5>
+                            </li>
+                            <li>
+                                <h5>list-style-type</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>margin</h4>
+                        <p>#about margin</p>
+                        <ul>
+                            <li>
+                                <h5>margin-bottom</h5>
+                            </li>
+                            <li>
+                                <h5>margin-left</h5>
+                            </li>
+                            <li>
+                                <h5>margin-right</h5>
+                            </li>
+                            <li>
+                                <h5>margin-top</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>marquee-direction</h4>
+                    </li>
+                    <li>
+                        <h4>marquee-play-count</h4>
+                    </li>
+                    <li>
+                        <h4>marquee-speed</h4>
+                    </li>
+                    <li>
+                        <h4>marquee-style</h4>
+                    </li>
+                    <li>
+                        <h4>mask</h4>
+                        <p>#about mask</p>
+                        <ul>
+                            <li>
+                                <h5>mask-attachment</h5>
+                            </li>
+                            <li>
+                                <h5>mask-box-image</h5>
+                            </li>
+                            <li>
+                                <h5>mask=clip</h5>
+                            </li>
+                            <li>
+                                <h5>mask-composite</h5>
+                            </li>
+                            <li>
+                                <h5>mask-image</h5>
+                            </li>
+                            <li>
+                                <h5>mask-origin</h5>
+                            </li>
+                            <li>
+                                <h5>mask-position</h5>
+                            </li>
+                            <li>
+                                <h5>mask-position-x</h5>
+                            </li>
+                            <li>
+                                <h5>mask-position-y</h5>
+                            </li>
+                            <li>
+                                <h5>mask-repeat</h5>
+                            </li>
+                            <li>
+                                <h5>mask-size</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>max-height</h4>
+                    </li>
+                    <li>
+                        <h4>max-width</h4>
+                    </li>
+                    <li>
+                        <h4>min-height</h4>
+                    </li>
+                    <li>
+                        <h4>min-width</h4>
+                    </li>
+                    <li>
+                        <h4>opacity</h4>
+                    </li>
+                    <li>
+                        <h4>orphans</h4>
+                    </li>
+                    <li>
+                        <h4>outline</h4>
+                        <p>#about outline</p>
+                        <ul>
+                            <li>
+                                <h5>outline-color</h5>
+                            </li>
+                            <li>
+                                <h5>outline-offset</h5>
+                            </li>
+                            <li>
+                                <h5>offline-radius</h5>
+                            </li>
+                            <li>
+                                <h5>outline-style</h5>
+                            </li>
+                            <li>
+                                <h5>outline-width</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>overflow</h4>
+                        <p>#about overflow</p>
+                        <ul>
+                            <li>
+                                <h5>overflow-style</h5>
+                            </li>
+                            <li>
+                                <h5>overflow-x</h5>
+                            </li>
+                            <li>
+                                <h5>overflow-y</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>padding</h4>
+                        <p>#about padding</p>
+                        <ul>
+                            <li>
+                                <h5>padding-bottom</h5>
+                            </li>
+                            <li>
+                                <h5>padding-left</h5>
+                            </li>
+                            <li>
+                                <h5>padding-right</h5>
+                            </li>
+                            <li>
+                                <h5>padding-top</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>page-break</h4>
+                        <ul>
+                            <li>
+                                <h5>page-break-after</h5>
+                            </li>
+                            <li>
+                                <h5>page-break-break</h5>
+                            </li>
+                            <li>
+                                <h5>page-break-inside</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>perspective</h4>
+                    </li>
+                    <li>
+                        <h4>perspective-origin</h4>
+                    </li>
+                    <li>
+                        <h4>position</h4>
+                    </li>
+                    <li>
+                        <h4>quotes</h4>
+                    </li>
+                    <li>
+                        <h4>resize</h4>
+                    </li>
+                    <li>
+                        <h4>right</h4>
+                    </li>
+                    <li>
+                        <h4>ruby-align</h4>
+                    </li>
+                    <li>
+                        <h4>ruby-overhang</h4>
+                    </li>
+                    <li>
+                        <h4>ruby-position</h4>
+                    </li>
+                    <li>
+                        <h4>scrollbar</h4>
+                        <ul>
+                            <li>
+                                <h5>scrollbar-3dlight-color</h5>
+                            </li>
+                            <li>
+                                <h5>scrollbar-arrow-color</h5>
+                            </li>
+                            <li>
+                                <h5>scrollbar-base-color</h5>
+                            </li>
+                            <li>
+                                <h5>scrollbar-darkshadow-color</h5>
+                            </li>
+                            <li>
+                                <h5>scrollbar-face-color</h5>
+                            </li>
+                            <li>
+                                <h5>scrollbar-highlight-color</h5>
+                            </li>
+                            <li>
+                                <h5>scrollbar-shadow-color</h5>
+                            </li>
+                            <li>
+                                <h5>scrollbar-track-color</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>size</h4>
+                    </li>
+                    <li>
+                        <h4>table-layout</h4>
+                    </li>
+                    <li>
+                        <h4>text</h4>
+                        <ul>
+                            <li>
+                                <h5>text-align</h5>
+                            </li>
+                            <li>
+                                <h5>text-align-last</h5>
+                            </li>
+                            <li>
+                                <h5>text-autospace</h5>
+                            </li>
+                            <li>
+                                <h5>text-decoration</h5>
+                            </li>
+                            <li>
+                                <h5>text-fill-color</h5>
+                            </li>                           </li>
+                            <li>
+                                <h5>text-indent</h5>
+                            </li>
+                            <li>
+                                <h5>text-justify</h5>
+                            </li>
+                            <li>
+                                <h5>text-kashida-space</h5>
+                            </li>
+                            <li>
+                                <h5>text-overflow</h5>
+                            </li>
+                            <li>
+                                <h5>text-rendering</h5>
+                            </li>
+                            <li>
+                                <h5>text-shadow</h5>
+                            </li>
+                            <li>
+                                <h5>text-stroke</h5>
+                            </li>
+                            <li>
+                                <h5>text-stroke-color</h5>
+                            </li>
+                            <li>
+                                <h5>text-stroke-width</h5>
+                            </li>
+                            <li>
+                                <h5>text-underline-position</h5>
+                            </li>
+                            <li>
+                                <h5>text-transform</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>top</h4>
+                    </li>
+                    <li>
+                        <h4>transform</h4>
+                        <p>#about transform</p>
+                        <ul>
+                            <li>
+                                <h5>transform-origin</h5>
+                            </li>
+                            <li>
+                                <h5>transform-style</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>transition</h4>
+                        <p>#about transition</p>
+                        <ul>
+                            <li>
+                                <h5>transition-delay</h5>
+                            </li>
+                            <li>
+                                <h5>transition-duration</h5>
+                            </li>
+                            <li>
+                                <h5>transition-property</h5>
+                            </li>
+                            <li>
+                                <h5>transition-timing-function</h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>unicode-bidi</h4>
+                    </li>
+                    <li>
+                        <h4>user-select</h4>
+                    </li>
+                    <li>
+                        <h4>vertical-align</h4>
+                    </li>
+                    <li>
+                        <h4>visibility</h4>
+                    </li>
+                    <li>
+                        <h4>white-space</h4>
+                    </li>
+                    <li>
+                        <h4>windows</h4>
+                    </li>
+                    <li>
+                        <h4>width</h4>
+                    </li>
+                    <li>
+                        <h4>word-break</h4>
+                    </li>
+                    <li>
+                        <h4>word-spacing</h4>
+                    </li>
+                    <li>
+                        <h4>word-wrap</h4>
+                    </li>
+                    <li>
+                        <h4>writing-mode</h4>
+                    </li>
+                    <li>
+                        <h4>z-index</h4>
+                    </li>
+                    <li>
+                        <h4>zoom</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Syntax</h3>
+            <div class="description">
+                <ul>
+                    <li>
+                        <h4>Style Inclusion Methods</h4>
+                        <dl>
+                            <dt>Linked Styles</dt>
+                            <dd>#about linked styles</dd>
+                            <dt>Embedded Styles</dt>
+                            <dd>#about embedded styles</dd>
+                            <dt>Imported Styles-@import</dt>
+                            <dd>#about imported styles</dd>
+                            <dt>Inline Styles</dt>
+                            <dd>#about inline styles</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <h4>CSS-3 Selectors</h4>
+                        <p>#about CSS-3 selectors</p>
+                        <dt>Element Selectors</dt>
+                        <dd>#about</dd>
+                        <dt>id Selectors</dt>
+                        <dd>#about</dd>
+                        <dt>class Rules</dt>
+                        <dd>#about</dd>
+                        <dt>Contextual Selectors</dt>
+                        <dd>#about</dd>
+                        <dt>Attribute Selectors</dt>
+                        <dd>#about</dd>
+                        <dt>Pseudo-Element Selectors</dt>
+                        <dd>#about</dd>
+                        <dt>Pseudo-Class Selectors</dt>
+                    </li>
+                    <li>
+                        <h4>CSS-3 Color Values</h4>
+                    </li>
+                    <li>
+                        <h4>Document Structure ans CSS-3 Inheritance</h4>
+                            <h5>!important Override</h5>
+                    </li>
+                    <li>
+                        <h4>Web Fonts</h4>
+                    </li>
+                    <li>
+                        <h4>Media Queries</h4>
+                    </li>
+                    <li>
+                        <h4>Measurements and Values</h4>
+                    </li>
+                    <li>
+                        <h4>Miscellaneous CSS-3 Constructs</h4>
+                        <p>#about the miscellaneous constructs both for css and the changes made for CSS-3</p>
+                        <ul>
+                            <li>
+                                <h5>/*comments*/</h5>
+                            </li>
+                            <li>
+                                <h5>@charset</h5>
+                            </li>
+                            <li>
+                                <h5>@font-face</h5>
+                            </li>
+                            <li>
+                                <h5>Media</h5>
+                            </li>
+                            <li>
+                                <h5>page</h5>
+                            </li>
+                            <li>
+                                <h5>!important</h5>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <button>
+        <a href="./index.html">Home</a>
+    </button>
+</body>
+</html>

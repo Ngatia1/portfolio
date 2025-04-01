@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="JavaScript">
+        <div class="header">
+            <h2>Navigator</h2>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="">Wriring JavaScript Code</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Main Screen</h2>
+            <div class="sub">
+                <h3>Introduction To JavaScript</h3>
+                <p>
+
+                </p>
+                <h3>Starting With Javascript</h3>
+                <p>
+                    JavaScript is a programming language that can be used on both the server side and client side of applications. With the the server side of an application beign the backend logic that usually runs on computers in data centers and interact with the database, while te client sid eis waht runs on the device of the user, often the browser for JavaScript.
+                    <br>Frontend JavaScript defines what the page page can do and how it can interact with the user or the backend.
+                </p>
+                <ul>
+                    <h3>Adding JavaScript to a web page</h3>
+                    <p>There are two ways to link JavaScript to a web page. The first way is to type the JavaScript directly
+                        in the HTML between two &lt;script&gt; tags. In HTML, the first tag, &lt;script&gt;, is to declare tat the following script will be executed. 
+                        Then we have the content that should be insude the element. Next, we close the script with the same tag, but preceded by a forward slash, &lt;/script&gt;. Or you can link a JavaScript file 
+                        to the HTML file using the script tag at the head of the HTML page.
+                    </p>
+                    <li>
+                        <h3>Directly in HTML</h3>
+                        <p>
+                            Here is an example of how to write a verysimple web page that will give a pop-up box saying Hi there!:
+                            <br><img src="" alt="">
+                            <br>If you load from a browser it will give some thing like is:
+                            <br><img src="" alt="">
+                            <br>The alert command will cret a popup that provides a message. This message is specified between the parenthesis behind the alert.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Linking an External File to our web page</h3>
+                        <p>
+                            This is considered a better practice, as it organizes code better and you can avoid very lengthy HTML pages due to the JavaScript. In addittion to these benefits, you can reuse the JavaScript on other 
+                            web pages of your website without having to copy and paste.
+                            <br><strong>Procedure</strong>
+                            <br>First you create a separate JavaScript file with the postfix .js 
+                            <br>Then youcreate a separet HTML file using the postfix .html 
+                            <br>Then you can give the content to your JavaScript file
+                            <br><img src="" alt="">
+                            <br><img src="" alt="">
+                            <br>Make sure you put the files in the same location, or that you specify the path to the JavaScript file in your HTML. The names are case-sensitive and should match exactly.
+                            <br>There are two options. One can use a relative path or an absolute path.
+                            <br><h3>The absolute path</h3>
+                            <br>a computer has a root, for Linux and macOS, it is / ,and for Windows it is often C:/. The path to the file starting from the root is the absolute path. This is the easiest to add because it will work on your machine. But there is a catch: on your machine, if this website folder later gets 
+                            moved to a server, the absolute path will no longer work.
+                            <br><h3>The relative path</h3>
+                            <br>This is the safer option. You specify how to get there from the file you are in at that time. So if it's in the same folder, you will only have to insert the name. If it's in a folder called "example" that is inside the folder that your file is in, you will have to specify <small>example/nameOfTheFile.js</small>.
+                            And if it's a folder up, you would have to specify <small>../nameOfThefile.js</small>
+                            <br><img src="" alt="">
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub">
+                <h3>Writing JavaScript Code</h3>
+                <ul>
+                    <li>
+                        <h4>Formatting Code</h4>
+                        <p>
+                            The two most important for now are indentations and semicolons. There are also naming conventions, but these will be addressed for every topic that is yet to come.
+                            <br><h4>Indentations and Whitespace</h4>
+                            <br>When you are writing code, often a line of code belongs to a certain code block (code between two curly brackets { like thsi }) or parent statement. If that is the case, you give the code in that block one indentation to make sure that you can see easily what is aprt of the block and when a new block starts.
+                            <br><img src="" alt="">
+                            <br>As you can see, you can  now easily see when the code blocks end. This is where the <small>if</small> has a corresponding } at the same indentation level. In the example without indentations, you would have to count
+                            the brackets to determine when the <small>if</small> block would end. Even though it is not necessary for working code, make sure to use indentation well.
+                            <br><h4>Semicolons</h4>
+                            <br>After every statement, you should insert a semicolon. JavaScript is very forgiving 
+                            and will understand many situations in which you have forgotten one, but develop 
+                            the habit of adding one after every line of code early. When you declare a code block, 
+                            such as an if statement or loop, you should not end with a semicolon. It is only for 
+                            the separate statements. 
+                            <br><h4>Code comments</h4>
+                            <br>With comments, you can tell the interpreter to ignore some lines of the file. They won't get executed 
+                            if they are comments. It is often useful to be able to avoid executing a part of the file. This could be for 
+                            the following reasons:
+                            <br><ol>
+                                <li>You do not want to execute a piece of code while running the script, so you comment it out so it gets ignored by the interpreter</li>
+                                <li>Metadata. adding context to the code, such as the author, and a description of what the file covers.</li>
+                                <li>Adding comments to specific parts of the code to explain what is happening or why a certain choice has been made.</li>
+                            </ol>
+                            <br>Ther are two ways to write comments. You can either write single-line comments or multi-line comments. Here is an example:
+                            <br><img src="" alt="">
+                            <br>The first one is single-line. This can also be an inline comment at the end of the line. Whatever comes after the // on the line will get ignored. The second is multiline; it is written by staring with /* and ending with */.
+                        </p>
+                        <h4>Prompt</h4>
+                        <p>
+                            A command prompt is another feature of JavaScript. It works like an alert, but instead, it takes input from the user. We will learn how to store vriables soon and once you know that we can store the result of this prompt function and do something with it.
+                            <br>An example of the prompt feature:
+                            <br><img src="" alt="">
+                            <br>The result is a popup as follows:
+                            <br><img src="" alt="">
+                            <br>The value you (or any other user) enter will be returned to the script, and can be 
+                            used in your code! This is great for getting user input to shape the way your code 
+                            works.
+                        </p>
+                        <h4>Random Numbers</h4>
+                        <p>
+                            This is the command to create a random number:
+                            <br><img src="" alt="">
+                            <br>We can do it in the console and see the result appear if we log it:
+                            <br><img src="" alt="">
+                            <br>This number will be a decimal between 0 and 1. If we want a number between 0 and 100, we can multiply it by 100, like this:
+                            <br><img src="" alt="">
+                            <br> If we don't want to have a decimal result, we can use the Math.floor function on it, which is rounding it down to the nearest integer:
+                            <br><img src="" alt="">
+                        </p>
+                    </li>
+                    <li>
+                        <h3>JavaScript Essentials</h3>
+                        <p>
+                            <ul>
+                                <li>
+                                    <h4>Variables</h4>
+                                    <p>
+                                        Variables are values in your code that can represent different values each time the code runs. 
+                                        Here is an example of two variables in a script.
+                                        <br><img src="" alt="">
+                                        <br>And they can be assigned a new value while the code is running:
+                                        <br><img src="" alt="">
+                                        <br>Without variables, a piece of code would do the exact same thing every single time it was run. Even though that could be helpful in some cases, it can be made much more powerful by working with variables to allow our code to do something different every time we run it.
+                                        <h5>Declaring Variables</h5>
+                                        <p>
+                                            The  first time you create a variable, you declare it. And you need a special word for that: <small>let, var,</small> or <small>const</small>. 
+                                            we'll discussthe use of these three arguments shortly. The second time you call a variable, you only use the name of the existing  variable to assign it a new value:
+                                            <br><img src="" alt="">
+                                            <br>In our examples, we will be assigning a value to our variables in the code. this is called "hardcoded" since the value of your variable is defined in your script instead of coming dynamically from some extenal input. This is something you won't be doing that often in actual code, 
+                                            as more commonly the value comes from an External source, such as an input box on a website that a user filled out, a database, or some other code that calls your code. The use of variables coming from external sources instead of being hardcoded into a script is actually the reason that scripts are adaptable to new informatiob, without having to rewrite the code.
+                                            <br>We have just established how powerful the variable building block is is code. right now, we are going to hardcode variables into our scripts, and they therefore will not vary until a coder changes the program. However, we will soon learn how to make our variables take in values from outside sources.
+                                        </p>
+                                        <h5>let, var, and const</h5>
+                                        <p>
+                                            A variable definition consists of three parts: a variable-defining keyword(let, var, or const), a name , and a value. Let's start with the difference between let, var, or const. Here you can see some examples of variables using the different keywords:
+                                            <br><img src="" alt="">
+                                            <br>let and var are both for variables that might have a new value assigned to them somewhere in the program. The difference between <small>let</small> and <small>var</small> is complex. It is related to scope.
+                                            <br>var has <b>global scope</b> and let has <b>block scope</b>. var's global scope means that you can use thevariables defined with var in the entire script. On the other hand, let's block scope means you can onlu use variables defined with let in the specific block of code in which they were defined. Remebr, a block of code will always start with { and end with }, which is how you can recognize them.
+                                            <br>On the other hand, const is used for variables that only get a value assigned once, for example, the value of pi, which will not change. If you try reassigning a value declared with const, you will get an error:
+                                            <br><img src="" alt="">
+                                            <br>This will result in the following output:
+                                            <br><img src="" alt="">
+                                            <br>We'll be using let in most of the examples for now, just trust that you should use let in most cases.
+                                        </p>
+                                        <h5>Naming Variables</h5>
+                                        <p>
+                                            When it comes to naming variables, there are some conventions in place:
+                                            <ol>
+                                                <li>Variables start with lowercaseletter, and they should be descriptive. If something holds an age, do not call it x, but age. This way, when you raed your scrpt later, you can easily understand what you did by just reading your code.</li>
+                                                <li>Variables cannot contain spaces, but they can use underscores. if you use a space, JavaScript doesn't recognize it as a single variable.</li>
+                                                <li>NB//The method that is commonly used is the camel method. This means that when we want to use multiple words to describe a variable, we will start with a lowercase word, then use a capital for every new word word after the first word. <br>..//Whatever the convection is in the place you are working, the key is consistency. If all namnig is done in a similar format, the code will look cleaner and more readable, which makes it a lot easier to make a small chenge later.</li>
+                                            </ol>
+                                        </p>
+                                        <h5>Primitive data types</h5>
+                                        <p>
+                                            Variables get a value assigned and these values can be of different types. JavaScript is a losely typed language, which nmeans that JavaScript can determine the type based on the value. The type doesn't need to be named explicitly. For example, if you declared a value of 5, JavaScript will automatically define it as a number type.
+                                            <br>A distinction exists between primitive data types and other more complex data types. We will cover primitive data types now which is a relatively simple data structure. Let's for now they just contain a value and have a type. JavaScript has seven primitives: <strong>String, Number, Boolean, Symbol, undefined, and null.</strong>
+                                        </p>
+                                        <h5>String</h5>
+                                        <p>
+                                            A string is used to store a text value. it is a sequence of characters. There are different ways to declare a string:
+                                            <ul>
+                                                <li>Double quotes</li>
+                                                <li>Single quotes</li>
+                                                <li>Backticks:special template strings in which you can use variables directly</li>
+                                            </ul>
+                                            The single and double quotes can both be used like so:
+                                            <br><img src="" alt="">
+                                            <br>The main difference between single and doulbe quotes is that you can use single quotes as literal characters in double quoted strings, and vice versa. If you declare a string with single quotes, the string will end as soon as it detects the second quotes, even if it's in the moiddle of a word. So for example the following will result into an error, because the string will end at the second single quote within let's
+                                            <br><img src="" alt="">
+                                            <br>Let will be recognized as a string, but after that, the bunch of charcters that follow cannot be interpreted by JavaScript. However, if you declare the string using double quotes, it will not end the string as soon as it hits the single quote, because it is looking for another double quote. Therefore, this alternative will work fine:
+                                            <br><img src="" alt="">
+                                            <br> In the same way with double quotes, the following would not work:
+                                            <br><img src="" alt="">
+                                            <br> Again, the compiler will not distinguish between double quotes used in different 
+                                            contexts, and will output an error.
+                                            <br> In a string using backticks, you can point to variables and the variable's value will be 
+                                            substituted into the line. You can see this in the following code snippet:
+                                            <br><img src="" alt="">
+                                            <br>And as you can see, you will have to specify these variables with a rather funky syntax, don't be intimidated! Variables in these template strings are specified between ${nameOfVariable}. The reason that it's such an intese syntax is that they want to avoid it being something
+                                            you would normally use, which would make it unnecessarily difficult to do so. In our case the console output would be as follows:
+                                            <br><img src="" alt="">
+                                            As you can see the language variable was replaced with the value: JavaScript.
+                                        </p>
+                                        <h5>Escape characters</h5>
+                                        <p>
+                                            Say we want to have double quotes, single quotes, and bckticks in our string. We would have a problem, as this cannot be done with just the ingredients we have now. There is an elegant solution to this problem. There is a special character that can be used to tell Javascript, "do not take the next character as you normally would" This is the escape character, a backslash.
+                                            <br>In this example the backslash can be used to ensure your interpreter doesn't see the single or double quote marks and end either string too early:
+                                            <br><img src="" alt="">
+                                            <br>This logs th followingto the console:
+                                            <br><img src="" alt="">
+                                            <br>As you can see, both types of quote marks inside the strings hve been logged without throwing an error. This is because the backslash before the quote character gives the quote character a different meaning. In this cae the meaning is that it should be a literal character instead of an indicator to end the string.
+                                            <br>The escape character hass even more purposes. You can use it to create a line break with \n or to include a backslash character in the text with\\:
+                                            <br><img src="" alt="">
+                                            <br>The output of these lines is as follows:
+                                            <br><img src="" alt="">
+                                        </p>
+                                        <h5>Number</h5>
+                                        <p>
+                                            The number datat type is used to represent numbers. In many languages there is a very clear difference between different types of numbers. the developers of JavaScript decided to go for one dat type for all these numbers: number. To be more precise, they decided to go for a 64-bit floating point number. this means that it can store rather large numbers and both signed and unsigned numbers, numbers with decimals and more.
+                                            <br>However there are differnt kinds of numbers it can represent. First of all integers, for example: 4 or 89. But the number data type can also be used to represent decimals, expotentials, octal, hexadecimal, and binary numbers. the following code sample should speak for itself:
+                                            <br><img src="" alt="">
+                                            <br>All these are just ways to represent number some you may encouter in the broder field of computer science, but the takeaway is that all the above numbers are of the number data type. Integers are numbers like these:
+                                            <br><img src="" alt="">
+                                            <br>And floating points are numbers like this:
+                                            <br><img src="" alt="">
+                                            <br>Binary numbers are of the number data type as well. For example:
+                                            <br><img src="" alt="">
+                                        </p>
+                                        <h5>BigInt</h5>
+                                        <p>
+                                            The limits of the number data type are between 2<sup>53</sup>-1 and -(2<sup>53</sup>-1). Incase you were in the need for  bigger or smaller number, BigInt comes into play. A BigInt data type can be recognized by the postfix n"
+                                            <br><img src="" alt="">
+                                            <br>Let's see what happens when we start to do some calculations between our previously made integer number, intNr and BigInt, bigNr:
+                                            <br><img src="" alt="">
+                                            <br>The output will be as follows:
+                                            <br><img src="" alt="">
+                                            <br>Uh-oh a TypeError! It is very clear about what is going wrong. We cannot mix BigInt with the Number data type to perform operations. This is something to keep in mind for later when actually working with BigInt, you can only operate on BigInt with other BigInts.
+                                        </p>
+                                        <h5>Boolean</h5>
+                                        <p>
+                                            The Boolean data type can hold two values:true and false. There is nothing in between. Thi Boolean is used a lot in code, especially expressions that evaluate to a Boolean:
+                                            <br><img src="" alt="">
+                                            <br>In the preceding example you can see the options we have for the boolean data type. It is used for situation in which you want to store a true or a false value(which can indicate on/off or yes/no). For example, whether an element is deleted:
+                                            <br><img src="" alt="">
+                                            <br>Or, whether the light is on or off:
+                                            <br><img src="" alt="">
+                                            <br>These variables suggest respectively that the specified object is not deleted and that the specific light is on.
+                                        </p>
+                                        <h5>Symbol</h5>
+                                        <p>
+                                            Symbol is a brand new data type introduce in ES6(ECMA  Script 6). Symbol can be used when it is important that variables are not equal, even though their value and data type are the same (In this case, they would both be of the symbol type). Compare the following string declarations to the symbol declarations, all of equal value:
+                                            <br><img src="" alt="">
+                                            <br>And the output:
+                                            <br><img src="" alt="">
+                                            <br>In thefirst half, JavaScript concludes that the strings are the same. They have the same value and the same type. However in the second part, each symbol is unique. Therefore although they contain the same string they are not same and output <small>false</small> when
+                                            compared. These symbol data types can be very handy as properties of objects, which we'll see later.
+                                        </p>
+                                        <h5>Undefined</h5>
+                                        <p>
+                                            JavaScript is a very special language. It has a spacial data type for a variable that has not been assigned a value. And this data type is undefined:
+                                            <br><img src="" alt="">
+                                            <br>The output here will be:
+                                            <br><img src="" alt="">
+                                            <br>We can also purposefully assign an undefined value. It is important to know that it is possible although it is even more important to know that manually assigning undefined is a bad practice:
+                                            <br><img src="" alt="">
+                                            <br>Alright, thsi can be done but it is recommended to not do this. This is for a number of reasons, for example, checking whether two values are the same. if one variable is undefined and your own variable is manually set to undefinedthey will be considered equal.This is an issue because if you are 
+                                            checking for equality you would want to know whether two values are actually equal not just that they are both undefined. This way someone's pet and their last name might be considered equal whereas they are actually both just empty values.
+                                        </p>
+                                        <h5>null</h5>
+                                        <p>
+                                            In the last example we saw an issue that can be solved with a final primitive type, null. null is a special value for saying that a variable is empty or has an unknown value. This is case sensitive. It should be written in lowercase: null:
+                                            <br><img src="" alt="">
+                                            <br>To solve the issue we encountered with setting a value as undefined, not that if you set it to null, you will not have the same problem. This is one of the reasons it is better to assign null to a variable when you want to say it is empy and unknown at first:
+                                            <br><img src="" alt="">
+                                            <br>This output the following:
+                                            <br><img src="" alt="">
+                                            <br>This shows that an automatically undefined variale, <small>lastName</small>, and a deliberately undefined variable, <small>terribleThingToDo</small>, are considered equal, which is problematic. On the other hand <small>lastName</small> and <small>betterOption</small> which was explicitly declared with a value of nul are not equal.
+                                        </p>
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                       <h4>Analyzing and modifying data types</h4>
+                       <p>
+                            We have seen the primitive data types. There are some built-in JavaScript methods that will help us deal with common problems related to primitives. Built-in methods are pices of logic that can be used without having to write JavaScript logic yourself.
+                            <br>We've already seen one built-in method: console.log()
+                            <br>There are many of these built-in methods, and the ones you will be meeting in this chapter are just the first few ou will encounter.
+                            <ul>
+                                <li>
+                                    <h5>Working out the type of a variable</h5>
+                                    <p>
+                                        Especially will null and undefined it can be hard to determine what kind of data type you are dealing with. Let's have a look at <small>typeof</small>. This returns the type of the variable. You can check thetype of a variable by entering <small>typeof</small> then either a space followed by the variable in question or variable in question in brackets:
+                                        <br><img src="" alt="">
+                                        <br>As you might assume both methods will output number, Brackest aren't required because technically <small>typeof</small> is an operator not a method, unlike <small>console.log()</small>. But 
+                                        sometimes you may find that using brackets makes your code easier to read. Here you can see it in action:
+                                        <br><img src="" alt="">
+                                        <br>Here in the same console.log() print command, we are printing the name of each variable ( as a string, declared with double quotes), then its type (using typeof). This will produce the following output:
+                                        <br><img src="" alt="">
+                                        <br>There is an odd one out, and that is the null type. In the output you can see that <small>typeof null</small> returns <small>object</small>, while in fact bull truly is a primitive and not an object. This is a bug that has been there since 
+                                        forever and now cannot be removed due to backwards compatibility problems. Don't worry about this bug, as it won't affect our programs, just be aware of it since it will go nowhere anytime soon, and it has the potential to break applications.
+                                    </p>
+                                    <h5>Converting data types</h5>
+                                    <p>
+                                        The variables in JavaScript can change types. Sometimes JavaScript does this automatically. what do you think the result of running the folloewing will be?
+                                        <br><img src="" alt="">
+                                        <br>We try to multiply a variable of type Number with a variable of type String. JavaScript does not just throw an error (as many languages would), but first tries to convert the string value to a number. If that can be done 
+                                        it can execute without any problem as if two numbers were declared. In this case console.log() will write 4 to the console.
+                                        <br>But this is dangerous! Guess what this code does:
+                                        <br><img src="" alt="">
+                                        <br>This one will log 22. The plus sign can be used to concatenate strings. Therefore instead of converting a string to a number it is converting a number to a string in this example, and clubbing 
+                                        the two string together i.e "2" and "2" make "22". Luckily, we do not need to rely on JavaScript's behaviour when converting data types. there are built-in functions we can use to convert the data type of our variable.
+                                        <br>There are three conversion methods: <strong>String(), Number(),</strong> and <strong>Boolean()</strong>. The first one converts a variable to type <strong>String</strong>. It pretty much takes any value including undefined and null and outs quotes around it.
+                                        <br>The second one tries to convert a variable to a number. If that cannot be done logically, it will change the value into NaN (not a number). <strong>Boolean()</strong> converts a variable to a Boolean. this will be truev
+                                        for everything except for null, undefined, 0 (number), an empty string and NaN. Let's see them in action:
+                                        <br><img src="" alt="">
+                                        <br>This will log the following:
+                                        <br><img src="" alt="">
+                                        <br>This might seem pretty staraight foward but not all of the options are equally obvious. These for example are not what you might think:
+                                        <br><img src="" alt="">
+                                        <br>The preceding code will log the following to the console:
+                                        <br><img src="" alt="">
+                                        <br>As you can see an empty string and null will both result in the number 0. This is a choice that the makers of JavaScript made, which you will have to know, it can come in handy at times when you ant to convert a string to 0 when it is empty or null.
+                                        <br>Next enter the following:
+                                        <br><img src="" alt="">
+                                        <br>The result that will be logged to the console is:
+                                        <br><img src="" alt="">
+                                        <br>Here we can see that anything that can't be interpreted as a number by simply removing the quotes will evaluate as NaN (not a number).
+                                        <br>Let's continue with the following:
+                                        <br><img src="" alt="">
+                                        <br>Finally this one will log the following:
+                                        <br><img src="" alt="">
+                                        <br>This output shows that any string will return true when converted to a Boolean, even the string"false"! Only an empty string, null, and undefined will lead to a Boolean value of false.
+                                        <br>Let's tease our brains a little bit. What might be the console's log?
+                                        <br><img src="" alt="">
+                                        <br>This one logs 4! The string gets converted to a numnber before it executes the plus operation and therefore it is a mathematical operation and not a string concatenation. We will discuss operators in depth shortly.
+                                    </p>
+                                </li>
+                            </ul>
+                       </p> 
+                    </li>
+                </ul>
+                <h3>Operators.</h3>
+                <p>
+                    After seeingquite a few data types and some ways to convert them it is time for the next major building block: opoerators. These come in handy when we want to work with the variables, modify them, perform calculations on them, and compare them. They are called operators because we use them to operate on our variables.
+                    <h4>Arithmetic operators.</h4>
+                    <p>
+                        Arithmetic operators can be used to perform opertions with numbers. Most of these operations will feel very natural to you because they are the basic mathematics you will have come across earlier in life already.
+                        <ul>
+                            <li>
+                                <h5>Addition</h5>
+                                <p>
+                                    Addition in JavaScript is very simple as we've seen already. we use + for this operation:
+                                    <br><img src="" alt="">
+                                    <br>However this operation can also come in handy for concatenating strings.Note the added space after "Hello", to ensure result contains space characters:
+                                    <br><img src="" alt="">
+                                    <br>The output of printing result1 and result2 will be as follows:
+                                    <br><img src="" alt="">
+                                    <br>As you can see adding numbers and strings leads to different results. If we add two different strings, it will concatenate them into a single string.
+                                </p>
+                                <h5>Substraction</h5>
+                                <p>
+                                    Substraction works as we would expect it as well. We use - for this operation.
+                                    <br><img src="" alt="">
+                                    <br>The output is as follows:
+                                    <br><img src="" alt="">
+                                    <br>The first result is 16. And the second result is more interesting. It gives NaN not an error, but just simply the conclusion that a word and a number substracted is not a number. Thanks for not crashing JavaScript.
+                                </p>
+                                <h5>Multiplication.</h5>
+                                <p>
+                                    We can multiply two numeric values with the * character. unlike some other languages, we cannot succefully multiply a number and a string in JavaScript.
+                                    <br>The result of multiplying a numeric and a non-numeric value is NaN:
+                                    <br><img src="" alt="">
+                                    <br>Output:
+                                    <br><img src="" alt="">
+                                </p>
+                                <h5>Division.</h5>
+                                <p>
+                                    Another staraitforward operator is division. We can divide two numbers with the / character:
+                                    <br><img src="" alt="">
+                                    <br>Output:
+                                    <br><img src="" alt="">
+                                </p>
+                                <h5>Exponentiation.</h5>
+                                <p>
+                                    Exponentiation means raising a certain base number to the exponent, for example, X<sup>y</sup>. This can be read as x to the powr of y. It means that we will multiply x by itself y number of times. Here is an example of how to do this in JavaScript, we use ** for this operator:
+                                    <br><img src="" alt="">
+                                    <br>We get the following output:
+                                    <br><img src="" alt="">
+                                    <br>The result of this operation is 2 to the power of 3(2*2*2), which is 8. We can also find the root of a number by using fractional exponents: for example, the square root of a value is the same as raising it to the power of 0.5.
+                                </p>
+                                <h5>Modulus.</h5>
+                                <p>
+                                    Modulus is the operator in which you determine how much is left after dividing a number by another number in its entirety. he amount of times the number can fit in the other number does not matter here. The outcome will be the remainder or what is left over. The character we use for this operation is the % character. Here are some examples:
+                                    <br><img src="" alt="">
+                                    <br>And the output:
+                                    <br><img src="" alt="">
+                                    <br> The first one is 10 % 3, where 3 fits 3 times into 10, and then 1 is left. The second one 
+                                    is 8 % 2. This results in 0, because 2 can fit 4 times into 8 without having anything 
+                                    left. The last one is 15 % 4, where 4 fits 3 times into 15. And then we have 3 left as 
+                                    a result.
+                                    <br>This is something taht would happen in your head automatically if I asked you to add 125 minutes to the current time. You will probably do two things: integer division to determine how many whole hours fit into 125minutes, and the 125 modulo 60 (in JavaScript terms 125 % 6o) to conclude that you will have to add 5 more minutes to the current time. Say our current time is 09:59 you will perform you
+                                     will probably start by adding 2hours and get 11:59 and then add 5minutes and then you will perform another modulos operation with 59 and 5 adding 1 more hour to the total and having 4minutes left 12:04.
+                                </p>
+                                <h5>Unary operators: increment and decrement.</h5>
+                                <p>
+                                    The last two operators of our arithmetic operator section are probably new to 
+                                    you, if you are new to programming (or only familiar with another programming 
+                                    language). These are the increment and decrement operators. A term we use here 
+                                    is operand. Operands are subject to the operator. So, if we say x + y, x and y are 
+                                    operands.
+                                    <br>We only need one operand for these operators and therefore we also call them unary operators. if we see x++, we can read this as x = x + 1. The same is true for the decrement operators: x -- can be read as x = x - 1;
+                                    <br><img src="" alt="">
+                                    <br>The output is as follows:
+                                    <br><img src="" alt="">
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                    <h4>Prefix and postfix operators</h4>
+                    <p>
+                        We can have the increment operator after the operand (x++), in which case we call this the postfix unary operator. We can also have it before (++x), which is the prefix unary operator. This does something different though.
+                        <br>the postfix gets executed after sending the variable through, and then after that the operation gets executed. In the following example, nr gets incremented by 1 after logging. So the first logging statement is still logging the old value because it has not been updated yet. It has been updated for the second log statement:
+                        <br><img src="" alt="">
+                        <br>The output is as follows:
+                        <br><img src="" alt="">
+                        <br>
+                    </p>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

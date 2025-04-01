@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    position: relative;
+    background: url(../multimedia/content/images/Iphone\ setup.jpeg) right no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.header .heading{
+    position: fixed;
+    height: 100vh;
+    width: 210px;
+    left: -210px;
+    border-radius: 15px;
+    background: rgba(127, 255, 212, 0.1);
+    box-shadow: 0 0 6px rgba(127, 255, 212, 0.5);
+}
+.heading .logo{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px rgba(127, 255, 212, 0.5);
+}
+.heading .logo a{
+    color: #f39c12;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    left: 5px;
+    line-height: 60px;
+    text-decoration: none;
+    cursor: auto;
+}
+.heading .menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.heading .menu li{
+    margin-top: 6px;
+    padding: 10px 15px;
+    transition: all 0.3s linear;
+}
+.heading .menu a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.heading .menu li:hover{
+    border-left: #0ff;
+    box-shadow: 0 0 4px rgba(000, 255, 255, 0.5);
+}
+.menu li .sub-menu{
+    display: none;
+}
+.heading .menu li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-left: 195px;
+    margin-top: -40px;
+    background-color: rgba(180, 255, 55, 0.1);
+    box-shadow: 0 0 5px rgba(0, 255, 250, 0.6);
+    border-radius: 10px;
+    line-height: 0.75;
+}
+.heading .menu li:hover .sub-menu ul li{
+    list-style: none;
+}
+.heading .menu li:hover .sub-menu ul li a:hover{
+    color: #adff2f;
+}
+.menu li .sub-menu li .menu-games{
+    display: none;
+}
+.menu li .sub-menu li:hover .menu-games{
+    display: block;
+    position: absolute;
+    margin-left: 103px;
+    margin-top: -30px;
+    background-color: rgba(13, 255, 87, 0.2);
+    box-shadow: 0 0 4px rgba(180, 255, 250, 0.6);
+    border-radius: 15px;
+    line-height: 0.5;
+}
+.menu li .sub-menu li:hover .menu-games ul li a:hover{
+    color: #f0f;
+}
+.menu #portfolio a span{
+    float: right;
+    opacity: 0.5;
+}
+.menu #portfolio a span:hover{
+    transform: rotate(25deg);
+}
+.heading .social{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    transition: all 0.2s linear;
+}
+.heading .social button{
+    background: linear-gradient(to bottom right, #c346c2, #2afadf, #adff2f);
+    color: #8a2be2;
+    border-radius: 8px;
+    opacity: 0.6;
+    font-size: 15px;
+    cursor: pointer;
+}
+.heading .social button:hover{
+    background: linear-gradient(to top left, #f0e68c, #ee82ee, #f5deb3);
+    transform: translateX(-2px);
+}
+#check{
+    display: none;
+}
+.header .btn_one span{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3 linear;
+}
+.heading .btn_two span{
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 175px;
+    top: -8px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.btn_one span:hover{
+    font-size: 29px;
+}
+.btn_two span:hover{
+    font-size: 24px;
+}
+#check:checked ~ .heading{
+    left: 0px;
+}
+#check:checked ~ .btn_one span{
+    opacity: 0;
+}
+#check:checked ~ .heading .btn_two span{
+    opacity: 1;
+}
+.content{
+    position: absolute;
+    left: 240px;
+    top: 35%;
+}
+.content .text{
+    font-size: 25px;
+    color: #f0f;
+}
+.content .name{
+    font-size: 55px;
+    color: #1de2d1;
+    margin: -20px 0 0 -3px;
+}
+.content .job{
+    font-size: 30px;
+    color: #1de2d1;
+    display: flex;
+}
+.content .job .typing{
+    color: #adff2f;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #1de2d1;
+    -webkit-animation: typing 8s steps(29) infinite;
+}
+@-webkit-keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 29ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+.search{
+    width: 215px;
+    float: right;
+    margin-right: 2px;
+}
+.srch{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    box-shadow: 1px 1px 6px rgba(255, 165, 0, 0.9);
+    border-radius: 8px 0 0 8px ;
+    margin-top: 2px;
+    color: #f39c12;
+    text-shadow: 0 0 black, 0 2px black, 2px 0 black, 0 0 black;
+    border-right: none;
+    font-size: 12px;
+    float: left;
+    padding: 8px;
+}
+.srch:focus{
+    outline: none;
+}
+.btn{
+    width: 50px;
+    height: 30px;
+    background: linear-gradient(to left, aqua,  rgb(255, 165, 0));
+    box-shadow: 1px 1px 6px rgba(255, 165, 0, 0.9);
+    border-radius: 0 8px 8px 0;
+    margin-top: 2px;
+    color: #111;
+    font-weight: 500;
+    font-size: 12px;
+}
+.btn:focus{
+    outline: none;
+}
+.socials{
+    float: right;
+    margin-top: 82.25vh;
+    margin-right: -215px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 30px;
+    height: 160px;
+    box-shadow: 1px 1px 5px rgba(0, 247, 255, 0.5);
+    border-radius: 5px;
+    background-color: rgba(000, 255, 255, 0.1);
+    text-align: center;
+}
+.socials a{
+    font-size: 25px;
+    opacity: 0.7;
+}
+.socials a svg:hover{
+    opacity: 1;
+    background-color: rgba(180, 255, 250, 0.6);
+    border-radius: 5px;
+    transform: translateX(-2.5px);
+    transition: all ease 0.3s;
+}

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(./multimedia/content/images/Snapchat-337851656.jpg) no-repeat center;
+    background-size: 850px;
+    background-color: #7fffd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.signup{
+    background: linear-gradient(to right, #7fffd4, #f39c12);
+    padding: 40px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #f39c12;
+}
+.input-box{
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-box input{
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 2px solid pink;
+    border-radius: 10px;
+}
+.forgot{
+    margin-bottom: 8px;
+    margin-top: -15px;
+    margin-left: 75px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to left, #7fffff, rgb(255, 0, 255)) ;
+    border-radius: 5px;
+    color: #8a2be2;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #9f9fdf;
+    color: #00f;
+}
+.account{
+    margin-top: 20px;
+}
+.account a{
+    text-decoration: none;
+    color: #00f;
+}
+a:hover{
+    color: #8a2be2;
+}
